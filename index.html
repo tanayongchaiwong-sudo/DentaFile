@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-100 min-h-screen flex flex-col font-sans">
+<body class="bg-slate-50 min-h-screen flex flex-col font-sans">
     <nav class="bg-blue-600 shadow-md">
         <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center space-x-3">
@@ -16,10 +16,30 @@
             </div>
         </div>
     </nav>
-    <main class="flex-grow max-w-3xl mx-auto w-full p-4 mt-6">
-        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-            <!-- นำลิงก์จากปุ่ม 'ส่ง' (Send) ของ Form มาใส่ตรงนี้ -->
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfFTEbjSeBRAYey-YNrSSoOYtWAcMHBDLWks93DkYMDvLZuiw/viewform?usp=dialog?embedded=true" width="100%" height="900" frameborder="0" class="w-full">กำลังโหลด...</iframe>
+    
+    <main class="flex-grow max-w-2xl mx-auto w-full p-4 mt-10">
+        <div class="bg-white rounded-3xl shadow-xl p-10 text-center border border-gray-100">
+            <div class="bg-blue-50 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fa-solid fa-cloud-arrow-up text-5xl text-blue-600"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-3">ระบบอัปโหลดไฟล์ (CBCT)</h2>
+            <p class="text-gray-500 mb-8 leading-relaxed">
+                รองรับไฟล์สแกนขนาดใหญ่สูงสุด 10 GB<br>
+                ระบบจะเปิดหน้าต่างความปลอดภัยของ Google เพื่อทำการอัปโหลด
+            </p>
+            
+            <!-- ปุ่มกดลิงก์ไป Google Forms ของคุณ -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFTEbjSeBRAYey-YNrSSoOYtWAcMHBDLWks93DkYMDvLZuiw/viewform" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-xl text-lg hover:-translate-y-1">
+                <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> ไปยังหน้าอัปโหลดไฟล์
+            </a>
+            
+            <div class="mt-8 pt-6 border-t border-gray-100 text-sm text-gray-400 text-left bg-gray-50 p-4 rounded-xl">
+                <p class="font-bold text-gray-600 mb-1"><i class="fa-solid fa-circle-info text-blue-500 mr-1"></i> คำแนะนำ:</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>กรุณาลงชื่อเข้าใช้ Gmail ก่อนอัปโหลดไฟล์</li>
+                    <li>หากส่งครั้งแรก ให้ระบุอีเมลไว้หลังชื่อ เช่น "คลินิก A (email@...)"</li>
+                </ul>
+            </div>
         </div>
     </main>
 </body>
